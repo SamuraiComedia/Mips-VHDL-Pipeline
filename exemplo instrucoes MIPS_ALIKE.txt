@@ -1,0 +1,42 @@
+opcode	dest	reg0	reg1
+0000	0000	0000	0000
+
+0000 -> LDA
+0001 -> ADD
+0010 -> SUB
+0011 -> MUL
+0100 -> JMP
+0101 -> BEQ
+0110 -> BNE
+0111 -> STA
+1000 -> MUI
+1001 -> ADDI
+1010 -> LWI
+1011 -> SUI
+1111 -> NAO FAZ NADA
+
+
+
+Imediato: 	 0000	  0010	  00000001
+	  	 LDA R2, 1
+
+
+
+Aritmética:	 0001	0010	0000	0001
+	 	 ADD R2, R0, R1
+
+
+
+Desvio:		 0100	0000	00000011
+		 JMP 3
+
+
+Armazenamento:	 0111	0001	00000011
+		 STA R1, 3
+
+
+1111 1111 1111 1111 -> INSTRUCAO VAZIA
+	
+
+	
+
